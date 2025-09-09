@@ -1,13 +1,17 @@
 public class day2 {
     public static void main(String[] args) {
+        System.out.println("=== SOAL1 ===");
         System.out.println("Saya akan bertahan selama 100 Hari Ngoding ,dan akan menjadi anggota resmi ISC");
         System.out.println();
         
+        System.out.println("=== SOAL2 ===");
         System.out.print("Selamat telah");
         System.out.print(" menjadi anggota ISC ");
         System.out.println("");
+        System.out.println();
         
-        
+        System.out.println("--- SOAL3 ---");
+        System.out.println();
         String nama = "NUR SRI RESKI";
         String nim = "D0224305";
         char kelas = 'A';
@@ -22,5 +26,6 @@ public class day2 {
     }
     
 }
+
 
 
