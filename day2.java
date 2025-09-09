@@ -13,12 +13,13 @@ public class day2 {
         char kelas = 'A';
         byte umur = 20;
         int tinggiBadan = 154;
-        System.out.printf("|%-6s : %-10s | %n","Nama","(" + nama + ")");
-        System.out.printf("|%-6s : %-15s | %n","Nim","(" + nim + ")");
-        System.out.printf("|%-6s : %-15s | %n","Kelas","(" + kelas + ")");
-        System.out.printf("|%-6s : %-15s | %n","Umur","(" + umur + ")");
-        System.out.printf("|%-6s : %-15s | %n","TB","(" + tinggiBadan + ")");
+        System.out.printf("|%-6s :%-10s | %n","Nama","(" + nama + ")");
+        System.out.printf("|%-6s :%-15s | %n","Nim","(" + nim + ")");
+        System.out.printf("|%-6s :%-15s | %n","Kelas","(" + kelas + ")");
+        System.out.printf("|%-6s :%-15s | %n","Umur","(" + umur + ")");
+        System.out.printf("|%-6s :%-15s | %n","TB","(" + tinggiBadan + ")");
         System.out.println();
     }
     
 }
+
