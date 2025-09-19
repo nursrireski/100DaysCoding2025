@@ -1,25 +1,25 @@
 import java.util.Scanner;
 public class day12 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("--- Program Input Biodata ---");
 
         System.out.print("Masukkan Nama Lengkap Anda: \n> ");
-        String nama = input.nextLine();
+        String nama = sc.nextLine();
 
         System.out.print("Masukkan NIM Anda: \n> ");
-        String nim = input.nextLine();
+        String nim = sc.nextLine();
 
         System.out.print("Masukkan Umur Anda: \n> ");
-        int umur = input.nextInt();
-        input.nextLine(); 
+        int umur = sc.nextInt();
+        sc.nextLine(); 
 
         System.out.print("Masukkan Kelas (A/B/C): \n> ");
-        String kelas = input.nextLine();
+        String kelas = sc.nextLine();
 
         System.out.print("Masukkan IPK Anda: \n> ");
-        double ipk = input.nextDouble();
+        double ipk = sc.nextDouble();
 
         System.out.println("\n=============================");
         System.out.println("       BIODATA MAHASISWA     ");
@@ -30,4 +30,5 @@ public class day12 {
         System.out.println("Kelas  : " + kelas);
         System.out.println("IPK    : " + ipk);
     }
+
 }
