@@ -13,15 +13,35 @@ Harga beras = 55000
 Harga minyak goreng = 43500
 Harga Frozen food = 20000
         */
-        int jumlahBarang = 1+1+1+1+6;
-        int hargaBarang = 16500+65000+55000+43500+(20000*6);
-        double pajak_10 = hargaBarang * 0.10;
-        double pajak_1 = hargaBarang * 0.01;
-        double totalBayar = hargaBarang + pajak_10+pajak_1;
+        // Harga barang
+        int hargaRoti = 16500;
+        int hargaSusu = 65000;
+        int hargaBeras = 55000;
+        int hargaMinyak = 43500;
+        int hargaFrozen = 20000;
+
+        // Jumlah barang
+        int jumlahRoti = 1;
+        int jumlahSusu = 1;
+        int jumlahBeras = 1;
+        int jumlahMinyak = 1;
+        int jumlahFrozen = 6;
+
+        
+        int totalHarga = (hargaRoti * jumlahRoti) +
+                         (hargaSusu * jumlahSusu) +
+                         (hargaBeras * jumlahBeras) +
+                         (hargaMinyak * jumlahMinyak) +
+                         (hargaFrozen * jumlahFrozen);
+        
+        
+        double pajak_10 = totalHarga * 0.10;
+        double pajak_1 = totalHarga * 0.01;
+        double totalBayar = totalHarga + pajak_10 + pajak_1;
         
        
         System.out.println("======= Struk Belanja =======");
-        System.out.println("Total harga barang : Rp " + hargaBarang);
+        System.out.println("Total harga barang : Rp " + totalHarga);
         System.out.println("Pajak 10%          : Rp " + pajak_10);
         System.out.println("Pajak 1%/barang    : Rp " + pajak_1);
         System.out.println("-----------------------------");
