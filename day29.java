@@ -15,7 +15,7 @@ public class day29 {
         
         boolean tinggiOk = tinggi > 150;
         boolean beratOk = berat < 80;
-        boolean masuk = tinggiOk != beratOk;
+        boolean masuk = tinggiOk == beratOk;
         System.out.println("Apakah tinggi badan sesuai dengan aturan?: "+tinggiOk);
         System.out.println("Apakah bearat badan sesuai dengan aturan?: "+beratOk);
         System.out.println("Apakah saya dapat masuk wahana: "+ masuk);
@@ -24,3 +24,4 @@ public class day29 {
     }
     
 }
+
