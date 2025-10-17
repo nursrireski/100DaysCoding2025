@@ -4,7 +4,7 @@ public class day40 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Input dua angka
+        
         System.out.print("Masukkan angka pertama: ");
         int angka1 = input.nextInt();
 
@@ -16,7 +16,7 @@ public class day40 {
 
         int hasil;
 
-        // Struktur if-else untuk menentukan operasi
+        
         if (operator == '+') {
             hasil = angka1 + angka2;
             System.out.println("Hasil: " + hasil);
@@ -41,6 +41,6 @@ public class day40 {
             System.out.println("Operator tidak dikenali. Gunakan +, -, *, atau /.");
         }
 
-        input.close();
+
     }
 }
