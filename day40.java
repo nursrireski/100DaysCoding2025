@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class day40 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.print("Masukkan angka pertama: ");
         double angka1 = input.nextDouble();
 
@@ -13,51 +14,40 @@ public class day40 {
         double angka2 = input.nextDouble();
 
         double hasil = 0;
+        boolean valid = true; 
+
         
+        boolean inputDesimal = (angka1 % 1 != 0) || (angka2 % 1 != 0);
 
         if (operator == '+') {
             hasil = angka1 + angka2;
-             if (hasil % 1 == 0) {
-            System.out.println("Hasil: " + (int) hasil);  
-        } else {
-            System.out.println("Hasil: " + hasil);        
-        }
-        } 
-        else if (operator == '-') {
+        } else if (operator == '-') {
             hasil = angka1 - angka2;
-             if (hasil % 1 == 0) {
-            System.out.println("Hasil: " + (int) hasil);  
-        } else {
-            System.out.println("Hasil: " + hasil);        
-        }
-        } 
-        else if (operator == '*') {
+        } else if (operator == '*') {
             hasil = angka1 * angka2;
-             if (hasil % 1 == 0) {
-            System.out.println("Hasil: " + (int) hasil);  
-        } else {
-            System.out.println("Hasil: " + hasil);        
-        }
-        } 
-        else if (operator == '/') {
-            if (angka2 != 0) {
-                hasil = angka1 / angka2;
-                } else {
+        } else if (operator == '/') {
+            if (angka2 == 0) {
                 System.out.println("Error: Pembagian dengan nol tidak diperbolehkan!");
-            }
-            if(angka1 % 1 == 0){
-                hasil = angka1 / angka2;
-            System.out.println("Hasil: " + (int) hasil);  
+                valid = false;
             } else {
-            System.out.println("Hasil: " + hasil);        
-    
+                hasil = angka1 / angka2;
             }
-        } 
-        else {
+        } else {
             System.out.println("Operator tidak dikenali. Gunakan +, -, *, atau /.");
-          
+            valid = false; 
         }
 
-       
+        
+        if (valid) {
+            if (inputDesimal) {
+                System.out.println("Hasil: " + hasil); 
+            } else {
+                if (hasil % 1 == 0) {
+                    System.out.println("Hasil: " + (int) hasil); 
+                } else {
+                    System.out.println("Hasil: " + hasil); 
+                }
+            }
+        }
     }
 }
