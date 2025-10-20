@@ -14,7 +14,7 @@ public class day43 {
         } else if (angka % 5 == 0) {
             System.out.println(angka + " adalah kelipatan 5.");
         } else {
-            System.out.println(angka + " bukan kelipatan 3 maupun 5.");
+            System.out.println(angka + " bukan kelipatan 3 maupun 5");
         }
     }
 }
