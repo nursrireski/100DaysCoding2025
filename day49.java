@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class day49 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input =new Scanner(System.in);
 
         System.out.println("=== PROGRAM EKSPERIMEN TERNARY OPERATOR ===\n");
 
@@ -57,3 +57,4 @@ public class day49 {
         
     }
 }
+
