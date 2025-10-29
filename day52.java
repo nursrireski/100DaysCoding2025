@@ -4,7 +4,7 @@ public class day52 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int angka = -1; 
+        int angka = 1; 
         int total = 0;
 
         // Perulangan akan berhenti ketika angka == 0
