@@ -29,15 +29,15 @@ public class day76 {
                 continue;
             }
 
-            // Filter spam/kata kasar
-            String[] forbiddenWords = {"kasar", "bodoh", "promo"};
+            // Filter kata terlarang 
             boolean terlarang = false;
 
-            for (String kata : forbiddenWords) {
-                if (komentar.toLowerCase().contains(kata)) {
-                    terlarang = true;
-                    break;
-                }
+            if (komentar.toLowerCase().contains("kasar")) {
+                terlarang = true;
+            } else if (komentar.toLowerCase().contains("bodoh")) {
+                terlarang = true;
+            } else if (komentar.toLowerCase().contains("promo")) {
+                terlarang = true;
             }
 
             if (terlarang) {
@@ -45,10 +45,10 @@ public class day76 {
                 continue;
             }
 
-            // Jika lolos semua
+            // Jika lolos semua pengecekan
             System.out.println("Komentar berhasil dipublikasikan!");
         }
 
-        input.close();
+    
     }
 }
