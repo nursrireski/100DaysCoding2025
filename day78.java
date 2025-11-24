@@ -10,12 +10,12 @@ public class day78 {
         username = username.trim();
 
         if (username.isEmpty()) {
-            System.out.println("ERROR: Username tidak boleh kosong!");
+            System.out.println("EROR: Username tidak boleh kosong!");
             return;
         }
 
         if (username.length() > 8) {
-            System.out.println("ERROR: Username terlalu panjang Maksimal 8!");
+            System.out.println("EROR: Username terlalu panjang Maksimal 8!");
             return;
         }
 
@@ -23,7 +23,7 @@ public class day78 {
         String password = sc.nextLine();
 
         if (password.length() < 4) {
-            System.out.println("ERROR: Password minimal 8 karakter!");
+            System.out.println("EROR: Password minimal 8 karakter!");
             return;
         }
 
@@ -33,7 +33,7 @@ public class day78 {
         }
 
         if (!Character.isUpperCase(password.charAt(0))) {
-            System.out.println("ERROR: Password harus dimulai dengan huruf kapital!");
+            System.out.println("EROR: Password harus dimulai dengan huruf kapital!");
             return;
         }
 
@@ -41,7 +41,7 @@ public class day78 {
         String ulangPass = sc.nextLine();
 
         if (!password.equals(ulangPass)) {
-            System.out.println("ERROR: Password tidak cocok!");
+            System.out.println("EROR: Password tidak cocok!");
             return;
         }
 
