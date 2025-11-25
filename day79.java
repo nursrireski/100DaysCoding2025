@@ -8,7 +8,8 @@ public class day79 {
         // ======== FASE REGISTRASI ========
         System.out.println("=== Registrasi Akun ===");
 
-        String username, password;
+        String username;
+        String password;
 
         while (true) {
             System.out.print("Buat Username: ");
