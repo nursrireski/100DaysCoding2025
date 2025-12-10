@@ -16,6 +16,6 @@ public class day94{
         System.out.println("2. Load Game");
         System.out.println("3. Exit");
 
-        garisPembatas();
+        
     }
 }
